@@ -1,0 +1,26 @@
+
+.vera-list li {
+  font-size: 13px;
+  text-align: left;
+  color: #aeaeae;
+}
+
+li.item {
+  font-size: 13px;
+  border-top: none;
+  padding: 20px 16px ;
+}
+
+section.contact {
+  padding-top: 200px;
+}
+
+.vera-padding {
+  margin-top: 25px;
+}
+
+.vera-nopadding {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
