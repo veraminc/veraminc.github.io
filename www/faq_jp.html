@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Add Your favicon here -->
+    <!--<link rel="icon" href="img/favicon.ico">-->
+
+    <title>Veramine</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/vera.css" rel="stylesheet">
+</head>
+<body id="page-top">
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">VERAMINE</a>
+                    <div id="switch-lang">
+                        <a href="/faq.html"><img src="https://flagcdn.com/24x18/us.png"></a>
+                        <a href="/faq_jp.html"><img src="https://flagcdn.com/24x18/jp.png"></a>
+                        <!--<a href="/faq.html"><img src="https://www.countryflags.io/us/shiny/32.png"></a>
+                        <a href="/faq_jp.html"><img src="https://www.countryflags.io/jp/shiny/32.png"></a>-->
+                    </div>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="/index.html">Home</a></li>
+                        <li><a class="page-scroll" href="/index.html#product">Product</a></li>
+                        <li><a class="page-scroll" href="/faq.html">FAQ</a></li>
+                        <li><a class="page-scroll" href="/index.html#team">Team</a></li>
+                        <li><a class="page-scroll" href="/index.html#signup">Free Version</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+
+<section id="collection" class="collection">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>           
+                <h1>Veramine（べラミン）機能に関するよくある質問</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 features-text">
+                <h3>まとめる内容：</h3>
+                <h4>Veramineセンサーはどのオペレーティングシステムをサポートしていますか</h4>
+                <p>Veramineセンサーは現在、Windows 7およびWindows Server 2008 R2以降の全ての最新バージョンのWindowsをサポートしています。LinuxおよびMac OS X用のバージョンは開発中です。</p>
+                <h4>どのようにVeramineセンサーをデプロイできますか？</h4>
+                <p>簡単に監視しようとする任意のシステムでVeramineの自己完結型のファイルを実行さえすれば展開できます。当バイナリを手動で実行するか、psexec、グループポリシー、SCCM、マシン起動スクリプト、又は使用する任意のデプロイメントテクノロジーを介してデプロイできます。クライアントサイドのコンフィギュレーション設定は必要なしです。</p>
+                <h4>デプロイは本当に簡単ですか？</h4>
+                <p>はい、次のビデオ（video）の説明のように、ダウンロードのリンクを受け取り次第、数秒以内でセンサーを導入できます<a href="https://www.youtube.com/embed/y65KQNjrPhw">video</a>。</p>
+                <h4>どのようにVeramineセンサーを管理できますか？</h4>
+                <p>Veramineカスタマーポータルを利用することで、センサーを更新、アンインストール、アンロード、又は再起動できます。各Veramineセンサー毎は継続的にVeramineサーバーと通信して、カスタマーポータルを介してネットワーク全体の管理を即座に行うことができます。</P>
+                <h4>各ホストにインストールされているセンサーコンポーネントは何ですか？</h4>
+                <p>センサーは、イベントを収集するWindowsカーネルモードドライバーと、Veramineサーバーを列挙して通信するWindowsユーザーモードサービスで構成されます。</p>
+                <h4>センサーはどのくらいの計算能力を消費しますか？</h4>
+                <p>初期の短い列挙期間の後、センサーはCPUの1％未満を消費することを目的としています。最もパフォーマンスの低いクラウドベースの仮想マシン（Azure A0、AWS t2.nano）でセンサーを実行しても、システムの全体的なパフォーマンスにはほとんど影響を与えません。</p>
+                <h4>どのイベントが収集されますか？</h4>
+                <p>センサーは、活動のプロセス、ネットワーク接続ユーザーログイン、レジストリ書き込み、リモートファイル操作、SMBプロトコル操作、Windowsサービス構成の変更、プロセス特権の変更、パスワードのダンプなど、ネットワーク上での攻撃を検出し理解するのに必要なすべての可視性とコンテキストを提供します。センサーは、分析と保存のために、サーバーに独特な実行可能イメージもアップロードします。</p> 
+                <h4>センサーはどのようにサーバーと通信しますか？</h4>
+                <P>センサーのユーザーモードコンポーネントは、ポート443でVeramineサーバーへの唯一の送信TCP / IP接続を初期化します。全てのイベントとファイルのアップロードは、このTLS暗号化通信チャネルを通してサーバーに継続的にストリーミングされます。</P>
+
+        </div>
+    </div>
+</section>
+
+<section id="detection">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 features-text">
+                <h3>検出</h3>
+                <h4>どのようにVeramineシステムで攻撃を検出できますか？</h4>
+                <p>センサーデータのストリームは、様々なルールベースの機械学習のアルゴリズムを基づきVeramineサーバーによって継続的に分析され、異常な動作を識別します。アナリストは、独自（自分が発見した）の検出アルゴリズムをシステムに補完できます。</P>
+                <h4>Veramineシステムはどのような種類の攻撃を検出しますか？</h4>
+                <P>Veramineセンサーのホストの可視性により、潜在的な検出機会が豊富になります。最初のv1.0のサーバー側検出アルゴリズムのセットは下記の項目が含まれています：</P>
+
+                <ul class="vera-list">
+                  <LI>カーネルモードの利用により、ローカルで特権が昇格・署名は不要に繋がります。</LI>
+                  <LI>パスワードと認証情報のダンプ：一般的に難読化されたメモリ内のMimikatz使用の状況でも検出できます。</LI>
+                  <LI>異常なプロセスの移行とリモートスレッドの作成：Metasploitスタイルの「移行」技術</LI>
+                  <LI>trojansのダウンロードと実行：インターネットからダウンロードされた、または電子メールに添付されたバイナリの実行を強調します。</LI>
+                </UL>
+
+                <p>検出のロードマップには、広範な追加の機械学習とヒューリスティックベースのアルゴリズムの進歩が含まれています。現在テスト中の次の検出アルゴリズムセットには、次のものがあります：</p>
+                <ul class="vera-list">
+                  <LI>プロセスのプロファイリング‐　メタデータのロングテール分析で相違を発見します。</LI>
+                  <LI>ユーザーのログイン及びログオフ、活動のセッション分析による不正な動きを検出します。</LI>
+                  <LI>歴史的および基準と比べる違いを発見し強調することによるデータ漏出を検出します。</LI>
+                </ul> 
+                <h4>Veramine検出のサブシステムは「ファイルレス」攻撃をどのように識別しますか？</h4>
+                <p>Veramineセンサーは、継続的にクライアント側の動作のストリームをサーバーに送信します。検出アルゴリズムは、何れかのファイルでもなく、その動作のストリームを基づき実行されます。悪意のある動作を説明するアラートには、ホスト及びユーザー、プロセス、ロードされたモジュールを指すメタデータが含まれます。ただし、動作はディスク上のファイルロードからの起源は必要ありません。</p>
+                <h4>Veramineシステムでは署名の更新が必要ですか？</h4>
+                <p>いいえ、Veramine検出システムでは署名の更新は必要ありません。検出は既知の悪意あるソフトウェアファイルの特定の属性ではなく、一連の既知の悪意の動作を元に実行されます。そのため、Veramineセンサーは、従来の既存マルウェア対策商品と共存しています。マルウェア対策製品は、Veramineの検出基準を満たさない既知の悪意あるソフトウェアを検出する一方、Veramineシステムは、マルウェア対策製品のシグネチャデータベースに含まれているかどうかに関係なく、ソフトウェアが示す悪意のある動作を検出します。</p>
+                <h4>Veramine 検出信号を抽出するために存在するサードパーティー結合オプションはどれですか？</h4>
+                <p>Veramineアラートは、カスタマーポータル、又は電子メールで確認できます。カスタムの統合オプションは、データとアラートの両方へのアウトバウンドSyslogとインバウンドの直接APIレベルアクセスの両方で利用できます。</p>
+            </div>             
+        </div>
+    </div>
+</section>
+
+<section id="discovery" class="discovery">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 features-text">
+                <h3>発見（Discovery）</h3>
+                <h4>Veramineの発見（Discovery）機能とは何ですか？</h4>
+                <p>Veramineセンサーにより収集された情報は、Veramineサーバーへ送信され、そこで追加のコンテキストと関連付けられ、豊富な検索インターフェイスでVeramineカスタマーポータルを通じて公開され、柔軟なアドホック検索が可能になります。</P>
+                <h4>当Discovery 機能のセキュリティ関連のユースケースは何ですか？</h4>
+                <p>Veramine のDiscovery機能は、アナリストが次のようなセキュリティ関連の質問に回答したい場合、即座の回答を提供する：</p>
+                <ul class="vera-list">
+                  <LI>コマンドラインに特定の文字列が含まれているプロセス</LI>
+                  <LI>特定のIPまたはドメインへの送信ネットワーク接続を行うプロセス</LI>
+                  <LI>特定のMD5ハッシュを持つバイナリをロードしたプロセス</li>
+                  <LI>DEPやASLRを適用せずに起動された32ビットプロセス</li>
+                  <LI>プロセスのバイナリが署名されていない状態で昇格された特権で起動されたプロセス</li>
+                  <LI>10MBを超える送信トラフィックを送信したプロセス</li>
+                  <LI>特定の登録場所に書き込んだプロセス</li>
+                  <LI>特定の期間中に特定の侵害されたユーザーによって起動されたプロセス</LI>
+                  <LI>プロセスバイナリがMicrosoftによって署名されていない過去24時間の「powershell.exe」の子プロセス</LI>
+                </ul>
+                <P>備考：このタイプの検索は、現在実行中のプロセスに対して限定されません。センサーは全てのイベントをサーバーにストリーミングし、この検索は履歴情報とリアルタイム情報の両方に対して実行されます。 Veramine Discoveryアーキテクチャでは、様々な検索タイプが可能であり、幸いことにこの機能の強化で初期の顧客フィードバックに直接対応するためにすでに行えました。</P>
+                <h4>Veramine Discovery機能のセキュリティと関係なしのユースケースは何ですか？</h4>
+                <P>Veramine Discovery機能は、上記のセキュリティ関連の質問に加えて、コンプライアンス関連の要求も簡単に処理できます。例挙げると、</P>
+                <ul class="vera-list">
+                  <LI>C：\ドライブでBitlockerが有効になっていないホスト</LI>
+                  <LI>自動更新が無効になっているホスト、又は最新のWindows Updateの検索がより90日前のホスト</LI>
+                  <LI>更新版をダウンロードしたが、まだ再起動していない、更新が再起動を待機しているホスト</LI>
+                  <LI>Windowsファイアウォールを無効にしているホスト</LI>
+                  <LI>過去1週間中に特定のDLLの古いバージョンをロードしたホスト</LI>
+                  <LI>コンソールが特定の期間後に自動的にロックするように設定されていないホスト</LI>
+                </ul>
+                <h4>これらのDiscovery機能を自動化して、セキュリティー警告を出すことはできますか？</h4>
+                <P>はい。カスタマーポータルを使用することで、次の「通知ルール」を簡単に作成できます。</P>
+                <ul class="vera-list">
+                  <LI>MD5又はファイル名のいずれかで記述された、構成可能なバイナリーのリストがロードされた時のアラート</LI>
+                  <LI>コマンドラインが特定の文字列に一致する場合のプロセス作成に関するアラート</LI>
+                  <LI>特定のリモートIPアドレスのセット又はリモートIPとポートの組み合わせへの接続に関するアラート</LI>
+                  <LI>特定のユーザー名のセットからのログイン毎にアラート</LI>
+                  <LI>特定のコンピュータセットへのユーザーログインについてのアラート</LI>
+                </ul>
+            </div>             
+        </div>
+    </div>
+</section>
+
+<section id="response" class="response">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 features-text">
+                <h3>レスポンス</h3>
+                <h4>各アクションはどのようにクライアントへ送信されますか？</h4>
+                <P>Veramineカスタマーポータルは、特定のカスタマーに属する特定のホスト、ホストのグループ、又は全てのホストに具体的なアクションを送信するように機能します。各Veramineセンサー毎はサーバーと常時通信しており、リクエストに正に応答します。</p>
+                <h4>現在、Veramineクライアントはどのアクションをサポートしていますか？</h4>
+                <P>現在Veramineの「アクションパック(Action Pack)」機能は開発中です。現行のv1.0の Veramineは、センサーの更新、センサーのアンロード、センサーのアンインストールなどのセンサー管理アクションをサポートしています。センサー開発の現バージョンには、特定のプロセスを強制終了するか、特定のレジストリキーを削除する機能が含まれています。 Veramineセンサーの将来のバージョンには、Yaraプロセスのメモリ検索機能が含まれる予定です。</p>    
+            </div>             
+        </div>
+    </div>
+</section>
+
+<section id="docs" class="docs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 features-text">
+                <h3>ドキュメント</h3>
+                <h4>商品の機能についてどこで参考できますか？</h4>
+		<p><a href=/docs/features_jp.pdf>Features.pdf</a> で参考できます。</p>
+                <h4>エンドポイントデセプションについてはどこで参考できますか？</h4>
+		<p><a href=/docs/deception.pdf>Deception.pdf</a> にて参考することが可能です。 </p>
+            </div> 
+        </div>
+    </div>
+</section>
+
+<section id="datastorage" class="datastorage">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 features-text">
+                <h3>データストレージ</h3>
+                <h4>Veramine はカスタマーのデータをどこに格納しますか？</h4>
+                <P>Veramineクラウドホスト型オファリンの全てのコンポーネントは、Microsoft Azureデータセンターで実行されます。 Veramineシステムによって保存されたデータは、大分のセキュリティチームによって機密のものだと見なされます。但し、収集および保存されたデータは、コンプライアンス要件によっては、コンプライアンスの目的でその用語を厳密に解釈した場合、個人識別情報（PII）と見なされない場合があります。 VeramineはISO 27001の標準を満たすことを目指している段階です。セキュリティ機密のデータのクラウドホスティングに関する質問については、一緒にやり取りできると幸いです。</p>
+                <h4>Veramineポータルは2要素認証をサポートしていますか？</h4>
+                <P>はい。カスタマーアカウントは、何れかのVeramineポータルログインに2要素認証を要求するように構成できます。現在、2FAの提供者としてAuthyを使用しています。この追加の検証手順にオプトインすることをお勧めします。</p>
+            </div>             
+        </div>
+    </div>
+</section>
+
+<section id="serverhosting" class="serverhosting">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 features-text">
+                <h3>サーバーホスティング</h3>
+                <h4>Veramineサーバーはセルフホストできますか？</h4>
+                <P>はい。 Veramineサーバーコンポーネントのセルフホスティングに関心のあるお客様に対して、異なるオプションが幾つかのあります。</p>
+                <P>最も簡単なオプションは、全てのコンポーネントが事前に構成され、起動時に自動起動するように設定されたAmazon AWS AMIイメージを使用する方法です。このオプションは、Amazon AWSで既にバックエンドインフラストラクチャをホストしているお客に最適であり、初期テストと評価を簡単に行うための特に優れたオプションです。単一マシンの設置はテストには問題ありませんが、最終的にほとんどのカスタマーは、本番環境のワークロードをサポートするために、複数のAWSシミュレーターを実行する必要があります。この場合、Veramineの各エンジニアは本番ワークロードに応じて顧客と直接協力し、AWS内のサーバー側インフラストラクチャをスケーリングします。</p>
+                <P>自己のデータセンターでVeramineサーバーコンポーネントをセルフホストすることを希望するお客に対して、2つのオプションがあります。 Veramineは、調整された既存のVHD又はVMIイメージの利用でお客独自の仮想化インフラストラクチャ内で実行するようにできます。このオプションは、顧客の操作、保守、および更新するのに不便かもしれませんが、Veramineサーバーを自分のデータセンター内のみで実行することを好む顧客向けのオプションとして存在します。 Veramineは、顧客が自分のデータセンターで物理的に配置するためのハードウェアアプライアンスを提供することもします。 Veramineのセルフホストオプションをご希望の場合は、具体的な要件があるか、何か不明点がございましたらお問い合わせください。</p>
+                <h4>セルフホスティングに比べてVeramineクラウドホストサーバーの使用には利点は何ですか？</h4>
+                <P>経済の規模により、Veramineのクラウドホストサーバーの方は、短期的にも長期的にも大幅に安価になります。 Veramineのインストールを自己管理することの運用コストを考慮しなくても、Veramineのクラウドホスト型オプションはより安価になります。それに、Veramineクラウドホストサーバーをはじめ常に最新のサーバー側検出アルゴリズムの更新を展開し、サーバー側の更新を毎月か四半期ごとに自己管理の顧客に渡します。</p>
+            </div>             
+        </div>
+    </div>
+    <div class="container vera-padding"></div>
+    <div class="container vera-padding"></div>
+</section>
+
+
+
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/inspinia.js"></script>
+</body>
+</html>
